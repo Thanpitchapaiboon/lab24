@@ -1,7 +1,11 @@
-#include<iostream>
-
+#include <iostream>
+#include <set>
 using namespace std;
 
+int count(int data[], int size) {
+    set<int> uniqueNumbers(data, data + size); 
+    return uniqueNumbers.size();
+}
 //Write function count() here.
 
 int main(){	
